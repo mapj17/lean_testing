@@ -9,5 +9,11 @@ class TestPrimes(unittest.TestCase):
         actual = pr.get_primes_trial_division(prime)
         self.assertEqual(expected, actual)
 
+    def test_factor_primes_for_composite_number(self):
+        prime = 4
+        expected = [2, 2]
+        actual = pr.get_primes_trial_division(prime)
+        self.assertEqual(expected, actual)
+
 if __name__ == '__main__':
     unittest.main()
