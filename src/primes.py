@@ -6,6 +6,7 @@ def get_primes_trial_division(num):
             primes.append(i)
         if num == 1:
             return primes
+    return primes
 
 if __name__=="__main__":
     print(get_primes_trial_division(52))
