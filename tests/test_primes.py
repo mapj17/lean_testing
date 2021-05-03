@@ -15,7 +15,7 @@ class TestPrimes(unittest.TestCase):
         actual = pr.get_primes_trial_division(prime)
         self.assertEqual(expected, actual)
 
-    def test_factor_primes_for_composite_number(self):
+    def test_factor_primes_for_other_composite_number(self):
         prime = 1
         expected = []
         actual = pr.get_primes_trial_division(prime)
