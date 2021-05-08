@@ -17,6 +17,6 @@ def is_prime(num):
 
 
 def get_primes_up_to(num):
-    return [x if is_prime(x) for x in range(num + 1)]
+    return [x for x in range(num + 1) if is_prime(x)]
 
 
