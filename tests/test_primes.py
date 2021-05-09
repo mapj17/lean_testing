@@ -25,5 +25,17 @@ class TestPrimes(unittest.TestCase):
         actual = pr.get_primes_trial_division(prime)
         self.assertEqual(expected, actual)
 
+    def test_get_primes_up_to_prime(self):
+        num = 13
+        expected = [2, 3, 5, 7, 11, 13]
+        actual = pr.get_primes_up_to(num)
+        self.assertEqual(expected, actual)
+
+    def test_get_primes_up_to_non_prime(self):
+        num = 16
+        expected = [2, 3, 5, 7, 11, 13]
+        actual = pr.get_primes_up_to(num)
+        self.assertEqual(expected, actual)
+
 if __name__ == '__main__':
     unittest.main()
