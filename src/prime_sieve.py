@@ -3,6 +3,8 @@ import numpy as np
 
 class PrimeSieve:
     def __init__(self, upper_bound):
+        if upper_bound < 2:
+            raise Exception('upper bound must be 2 or greater')
         self.upper_bound = upper_bound
         self.sieve = np.array(list(range(upper_bound + 1)))
         self.sieve[1] = 0

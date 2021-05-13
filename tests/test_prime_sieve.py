@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardi
 import unittest
 import src.prime_sieve as sieve
 
-class TestPrimes(unittest.TestCase):
+class TestPrimeSieve(unittest.TestCase):
     def setUp(self):
         self.sieve = sieve.PrimeSieve(1000)
 
