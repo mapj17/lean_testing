@@ -17,7 +17,7 @@ class TestPrimeSieve(unittest.TestCase):
             self.assertEqual(expected, actual)
 
     def test_prime_sieve_is_prime_for_non_primes(self):
-        non_primes = [4, 6, 8 ,9 , 14]
+        non_primes = [4, 6, 8 ,9 , 14, 1000]
         expected = False
         for non_prime in non_primes:
             actual = self.sieve.is_prime(non_prime)
