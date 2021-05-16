@@ -28,3 +28,11 @@ def get_n_first_primes(n):
         if is_prime(current_num):
             primes.append(current_num)
     return primes
+
+def get_largest_prime_factor(num):
+    factors = get_primes_trial_division(num)
+    return max(factors)
+
+def get_smallest_prime_factor(num):
+    factors = get_primes_trial_division(num)
+    return min(factors)
