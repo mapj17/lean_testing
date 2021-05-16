@@ -24,3 +24,6 @@ class PrimeSieve:
             raise Exception('Number not contained in sieve')
         else:
             return self.sieve[num] > 0
+
+    def sum_of_primes_in_sieve(self):
+        return sum(self.sieve)

@@ -22,6 +22,13 @@ class TestPrimeSieve(unittest.TestCase):
         for non_prime in non_primes:
             actual = self.sieve.is_prime(non_prime)
             self.assertEqual(expected, actual)
+    def test_prime_sieve_sum(self):
+        tmp_sieve = sieve.PrimeSieve(5)
+        expected = 10
+        actual = tmp_sieve.sum_of_primes_in_sieve()
+        self.assertEqual(expected, actual)
+
+
 
 
 if __name__ == '__main__':

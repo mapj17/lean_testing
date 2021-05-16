@@ -19,3 +19,12 @@ def is_prime(num):
 def get_primes_up_to(num):
     assert num >= 2
     return [x for x in range(2, num + 1) if is_prime(x)]
+
+def get_n_first_primes(n):
+    primes = []
+    current_num = 1
+    while not len(primes) == n:
+        current_num+=1
+        if is_prime(current_num):
+            primes.append(current_num)
+    return primes
